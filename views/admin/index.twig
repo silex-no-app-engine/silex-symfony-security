@@ -1,0 +1,10 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        Olá, {{ user.getName() }}
+        <a href="{{ path('admin_logout') }}">Logout</a>
+    {% else %}
+        <a href="{{ path('login') }}">Login</a>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{
+    "require": {
+        "silex/silex": "^2.0",
+        "symfony/security": "^3.2",
+        "doctrine/orm": "^2.5",
+        "doctrine/dbal": "^2.5",
+        "dflydev/doctrine-orm-service-provider": "^2.0",
+        "twig/twig": "^1.33",
+        "symfony/twig-bridge": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeExperts\\" : "src/"
+        }
+    }
+}
